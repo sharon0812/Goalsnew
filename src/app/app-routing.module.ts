@@ -9,9 +9,10 @@ import { GoalDetailComponent } from './goal-detail/goal-detail.component';
 const routes: Routes = [
   { path: 'goals', component: GoalComponent},
   { path: 'about', component: AboutComponent},
+  { path: 'goals/:id', component: GoalDetailComponent },
   { path:'**', component:NotFoundComponent},
   { path: '', redirectTo:"/goals", pathMatch:"full"},
-  { path: 'goals/:id', component: GoalDetailComponent },
+  
 ];
 
 @NgModule({
