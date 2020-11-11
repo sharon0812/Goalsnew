@@ -11,7 +11,7 @@ export class GoalFormComponent implements OnInit {
   newGoal = new Goal(0,"","",new Date());
 @Output() addGoal = new EventEmitter<Goal>();
 
-  submitGoal(){
+  submitGoal(){ 
 this.addGoal.emit(this.newGoal);
   }
   constructor() { }
